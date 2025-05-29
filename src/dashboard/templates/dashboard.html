@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTA Transit Analytics Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        .metric-card {
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .route-list {
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        .route-item {
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .route-item:hover {
+            background-color: #f8f9fa;
+        }
+        .route-item.active {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <h1 class="mb-4">MBTA Transit Analytics Dashboard</h1>
+        
+        <div class="row">
+            <!-- Route List -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Routes</h5>
+                    </div>
+                    <div class="card-body route-list">
+                        {% for route in routes %}
+                        <div class="route-item" data-route-id="{{ route.id }}">
+                            <h6>{{ route.name }}</h6>
+                            <small>Efficiency: {{ "%.1f"|format(route_metrics[route.id].efficiency_score) }}%</small>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Metrics and Charts -->
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Current Metrics -->
+                    <div class="col-md-3">
+                        <div class="metric-card bg-light">
+                            <h6>Average Delay</h6>
+                            <h3 id="avg-delay">-- min</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card bg-light">
+                            <h6>Headway Variance</h6>
+                            <h3 id="headway-var">--</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card bg-light">
+                            <h6>Bunching Score</h6>
+                            <h3 id="bunching">--%</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card bg-light">
+                            <h6>Completion Rate</h6>
+                            <h3 id="completion">--%</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Charts -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Delay History</h5>
+                                <div id="delay-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Bunching History</h5>
+                                <div id="bunching-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Completion Rate History</h5>
+                                <div id="completion-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentRouteId = null;
+        
+        // Initialize charts
+        function initCharts() {
+            const delayChart = document.getElementById('delay-chart');
+            const bunchingChart = document.getElementById('bunching-chart');
+            const completionChart = document.getElementById('completion-chart');
+            
+            Plotly.newPlot(delayChart, [{
+                y: [],
+                type: 'scatter',
+                mode: 'lines',
+                name: 'Average Delay'
+            }], {
+                title: 'Average Delay (minutes)',
+                height: 300
+            });
+            
+            Plotly.newPlot(bunchingChart, [{
+                y: [],
+                type: 'scatter',
+                mode: 'lines',
+                name: 'Bunching Score'
+            }], {
+                title: 'Bunching Score (%)',
+                height: 300
+            });
+            
+            Plotly.newPlot(completionChart, [{
+                y: [],
+                type: 'scatter',
+                mode: 'lines',
+                name: 'Completion Rate'
+            }], {
+                title: 'Completion Rate (%)',
+                height: 300
+            });
+        }
+        
+        // Update metrics
+        async function updateMetrics(routeId) {
+            const response = await fetch(`/api/route/${routeId}/metrics`);
+            const data = await response.json();
+            
+            document.getElementById('avg-delay').textContent = 
+                `${(data.average_delay / 60).toFixed(1)} min`;
+            document.getElementById('headway-var').textContent = 
+                data.headway_variance.toFixed(2);
+            document.getElementById('bunching').textContent = 
+                `${(data.bunching_score * 100).toFixed(1)}%`;
+            document.getElementById('completion').textContent = 
+                `${(data.completion_rate * 100).toFixed(1)}%`;
+        }
+        
+        // Update charts
+        async function updateCharts(routeId) {
+            // Update delay chart
+            const delayResponse = await fetch(`/api/route/${routeId}/delays`);
+            const delayData = await delayResponse.json();
+            Plotly.update('delay-chart', {
+                x: [delayData.map(d => d.timestamp)],
+                y: [delayData.map(d => d.average_delay / 60)]
+            });
+            
+            // Update bunching chart
+            const bunchingResponse = await fetch(`/api/route/${routeId}/bunching`);
+            const bunchingData = await bunchingResponse.json();
+            Plotly.update('bunching-chart', {
+                x: [bunchingData.map(d => d.timestamp)],
+                y: [bunchingData.map(d => d.bunching_score * 100)]
+            });
+            
+            // Update completion chart
+            const completionResponse = await fetch(`/api/route/${routeId}/completion`);
+            const completionData = await completionResponse.json();
+            Plotly.update('completion-chart', {
+                x: [completionData.map(d => d.timestamp)],
+                y: [completionData.map(d => d.completion_rate * 100)]
+            });
+        }
+        
+        // Route selection handler
+        document.querySelectorAll('.route-item').forEach(item => {
+            item.addEventListener('click', async () => {
+                const routeId = item.dataset.routeId;
+                currentRouteId = routeId;
+                
+                // Update active state
+                document.querySelectorAll('.route-item').forEach(i => 
+                    i.classList.remove('active'));
+                item.classList.add('active');
+                
+                // Update metrics and charts
+                await updateMetrics(routeId);
+                await updateCharts(routeId);
+            });
+        });
+        
+        // Initialize
+        initCharts();
+        
+        // Auto-refresh every minute
+        setInterval(async () => {
+            if (currentRouteId) {
+                await updateMetrics(currentRouteId);
+                await updateCharts(currentRouteId);
+            }
+        }, 60000);
+    </script>
+</body>
+</html> 

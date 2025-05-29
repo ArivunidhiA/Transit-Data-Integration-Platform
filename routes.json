@@ -1,0 +1,1426 @@
+[
+  {
+    "id": "Red",
+    "name": "Red Line",
+    "type": "1",
+    "description": "Rapid Transit",
+    "color": "DA291C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Mattapan",
+    "name": "Mattapan Trolley",
+    "type": "0",
+    "description": "Rapid Transit",
+    "color": "DA291C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Orange",
+    "name": "Orange Line",
+    "type": "1",
+    "description": "Rapid Transit",
+    "color": "ED8B00",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Green-B",
+    "name": "Green Line B",
+    "type": "0",
+    "description": "Rapid Transit",
+    "color": "00843D",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Green-C",
+    "name": "Green Line C",
+    "type": "0",
+    "description": "Rapid Transit",
+    "color": "00843D",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Green-D",
+    "name": "Green Line D",
+    "type": "0",
+    "description": "Rapid Transit",
+    "color": "00843D",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Green-E",
+    "name": "Green Line E",
+    "type": "0",
+    "description": "Rapid Transit",
+    "color": "00843D",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Blue",
+    "name": "Blue Line",
+    "type": "1",
+    "description": "Rapid Transit",
+    "color": "003DA5",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "741",
+    "name": "Logan Airport Terminals - South Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "7C878E",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "742",
+    "name": "Design Center - South Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "7C878E",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "743",
+    "name": "Chelsea Station - South Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "7C878E",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "751",
+    "name": "Nubian Station - South Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "7C878E",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "749",
+    "name": "Nubian Station - Temple Place",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "7C878E",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "746",
+    "name": "Silver Line Way - South Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "7C878E",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Fairmount",
+    "name": "Fairmount Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-NewBedford",
+    "name": "Fall River/New Bedford Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Fitchburg",
+    "name": "Fitchburg Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Worcester",
+    "name": "Framingham/Worcester Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Franklin",
+    "name": "Franklin/Foxboro Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Greenbush",
+    "name": "Greenbush Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Haverhill",
+    "name": "Haverhill Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Kingston",
+    "name": "Kingston Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Lowell",
+    "name": "Lowell Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Needham",
+    "name": "Needham Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Newburyport",
+    "name": "Newburyport/Rockport Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Providence",
+    "name": "Providence/Stoughton Line",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "CR-Foxboro",
+    "name": "Foxboro Event Service",
+    "type": "2",
+    "description": "Regional Rail",
+    "color": "80276C",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Boat-F4",
+    "name": "Charlestown Ferry",
+    "type": "4",
+    "description": "Ferry",
+    "color": "008EAA",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Boat-F1",
+    "name": "Hingham/Hull Ferry",
+    "type": "4",
+    "description": "Ferry",
+    "color": "008EAA",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Boat-EastBoston",
+    "name": "East Boston Ferry",
+    "type": "4",
+    "description": "Ferry",
+    "color": "008EAA",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Boat-Lynn",
+    "name": "Lynn Ferry",
+    "type": "4",
+    "description": "Ferry",
+    "color": "008EAA",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Boat-F6",
+    "name": "Winthrop Ferry",
+    "type": "4",
+    "description": "Ferry",
+    "color": "008EAA",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "Boat-F7",
+    "name": "Quincy Ferry",
+    "type": "4",
+    "description": "Ferry",
+    "color": "008EAA",
+    "text_color": "FFFFFF"
+  },
+  {
+    "id": "747",
+    "name": "Sullivan Square Station - Ruggles Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "708",
+    "name": "Beth Israel Deaconess Hospital - Andrew Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "1",
+    "name": "Harvard Square - Nubian Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "4",
+    "name": "North Station - Design Center",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "7",
+    "name": "City Point - Otis Street & Summer Street",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "8",
+    "name": "Harbor Point - Kenmore Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "9",
+    "name": "City Point - Copley Square",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "10",
+    "name": "City Point - Copley Square",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "11",
+    "name": "City Point - Chauncy Street & Summer Street",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "14",
+    "name": "Roslindale Square - Heath Street",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "15",
+    "name": "Fields Corner Station or St Peter's Square - Ruggles Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "16",
+    "name": "Forest Hills Station - Andrew Station or Harbor Point",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "17",
+    "name": "Fields Corner Station - Andrew Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "18",
+    "name": "Ashmont Station - Andrew Station",
+    "type": "3",
+    "description": "Coverage Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "19",
+    "name": "Fields Corner Station - Kenmore or Ruggles Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "21",
+    "name": "Ashmont Station - Forest Hills Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "22",
+    "name": "Ashmont Station - Ruggles Station via Talbot Ave",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "23",
+    "name": "Ashmont Station - Ruggles Station via Washington Street",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "24",
+    "name": "Wakefield Avenue & Truman Parkway - Ashmont Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "26",
+    "name": "Ashmont Station - Norfolk Street Loop",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "28",
+    "name": "Mattapan Station - Ruggles Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "29",
+    "name": "Mattapan Station - Jackson Square Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "30",
+    "name": "Mattapan Station - Forest Hills Station via Cummins Highway and Roslindale Square",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "31",
+    "name": "Mattapan Station - Forest Hills Station via Morton Street",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "32",
+    "name": "Wolcott or Cleary Square - Forest Hills Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "33",
+    "name": "River Street & Milton Street - Mattapan Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "34",
+    "name": "Dedham Square - Forest Hills Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "34E",
+    "name": "Walpole Center - Forest Hills Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "35",
+    "name": "Dedham Mall or Stimson Street - Forest Hills Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "36",
+    "name": "Millennium Park or VA Hospital - Forest Hills Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "37",
+    "name": "Baker Street & Vermont Street - Forest Hills Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "38",
+    "name": "Wren Street - Forest Hills Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "39",
+    "name": "Forest Hills Station - Back Bay Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "40",
+    "name": "Georgetowne - Forest Hills Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "41",
+    "name": "Centre Street & Eliot Street - JFK/UMass Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "42",
+    "name": "Forest Hills Station - Nubian Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "43",
+    "name": "Ruggles Station - Park Street Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "44",
+    "name": "Jackson Square Station - Ruggles Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "45",
+    "name": "Franklin Park - Ruggles Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "47",
+    "name": "Central Square, Cambridge - Broadway Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "50",
+    "name": "Cleary Square - Forest Hills Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "51",
+    "name": "Reservoir Station - Forest Hills Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "52",
+    "name": "Dedham Mall - Watertown Yard",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "55",
+    "name": "West Fenway - Copley Square",
+    "type": "3",
+    "description": "Coverage Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "57",
+    "name": "Watertown Yard - Kenmore Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "59",
+    "name": "Needham Junction - Watertown Square",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "60",
+    "name": "Chestnut Hill - Kenmore Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "61",
+    "name": "North Waltham - Waltham Center",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "62",
+    "name": "Bedford VA Hospital - Alewife Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "627",
+    "name": "Bedford VA Hospital - Alewife Station via Hanscom Airport",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "64",
+    "name": "Oak Square - University Park or Kendall/MIT Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "65",
+    "name": "Brighton Center - Kenmore Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "66",
+    "name": "Harvard Square - Nubian Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "67",
+    "name": "Turkey Hill - Alewife Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "68",
+    "name": "Harvard Square - Kendall/MIT Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "69",
+    "name": "Harvard Square - Lechmere Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "70",
+    "name": "Market Place Drive or Waltham Center - University Park",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "71",
+    "name": "Watertown Square - Harvard Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "73",
+    "name": "Waverley Square - Harvard Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "74",
+    "name": "Belmont Center - Harvard via Concord Avenue",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "75",
+    "name": "Belmont Center - Harvard via Huron Avenue",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "76",
+    "name": "Lincoln Lab - Alewife Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "77",
+    "name": "Arlington Heights - Harvard Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "78",
+    "name": "Arlmont Village - Harvard Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "80",
+    "name": "Arlington Center - Lechmere Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "83",
+    "name": "Rindge Avenue - Central Square, Cambridge",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "85",
+    "name": "Spring Hill - Kendall/MIT Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "86",
+    "name": "Harvard Square - Reservoir Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "87",
+    "name": "Clarendon Hill or Arlington Center - Lechmere Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "88",
+    "name": "Clarendon Hill - Lechmere Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "89",
+    "name": "Clarendon Hill or Davis Station - Sullivan Square Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "90",
+    "name": "Davis Station - Assembly Row",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "91",
+    "name": "Sullivan Square Station - Central Square, Cambridge",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "92",
+    "name": "Sullivan Square Station - Downtown via Main Street",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "93",
+    "name": "Sullivan Square Station - Downtown via Bunker Hill Street",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "94",
+    "name": "Medford Square - Davis Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "95",
+    "name": "West Medford or Arlington Center - Sullivan Square Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "96",
+    "name": "Medford Square - Harvard Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "97",
+    "name": "Malden Center Station - Wellington Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "99",
+    "name": "Woodland Road - Wellington Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "100",
+    "name": "Elm Street - Wellington Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "101",
+    "name": "Malden Center Station - Sullivan Square Station via Winter Hill",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "104",
+    "name": "Malden Center Station - Airport Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "105",
+    "name": "Malden Center Station - Sullivan Square Station via Newland Street Housing",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "106",
+    "name": "Lebanon Loop - Wellington Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "108",
+    "name": "Linden Square - Wellington Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "109",
+    "name": "Linden Square - Harvard Square via Sullivan",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "110",
+    "name": "Wonderland Station - Wellington Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "111",
+    "name": "Woodlawn - Haymarket Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "112",
+    "name": "Wellington Station - Wood Island Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "114",
+    "name": "Market Basket - Maverick Station",
+    "type": "3",
+    "description": "Coverage Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "116",
+    "name": "Wonderland Station - Maverick Station",
+    "type": "3",
+    "description": "Frequent Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "119",
+    "name": "Northgate Shopping Center - Beachmont Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "120",
+    "name": "Orient Heights Station - Jeffries Point",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "121",
+    "name": "Wood Island Station - Maverick Station",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "131",
+    "name": "Melrose Highlands - Malden Center Station",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "132",
+    "name": "Redstone Shopping Center - Malden Center Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "134",
+    "name": "North Woburn - Wellington Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "137",
+    "name": "Reading Depot - Malden Center Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "171",
+    "name": "Logan Airport Terminals - Nubian Station",
+    "type": "3",
+    "description": "Supplemental Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "201",
+    "name": "Fields Corner Loop via Neponset Ave",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "202",
+    "name": "Fields Corner Loop via Adams Street",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "210",
+    "name": "Quincy Center Station - Fields Corner Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "211",
+    "name": "Quincy Center Station - Squantum",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "215",
+    "name": "Quincy Center Station - Ashmont Station via West Quincy",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "216",
+    "name": "Houghs Neck - Quincy Center Station via Germantown",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "217",
+    "name": "Quincy Center Station - Ashmont Station via Wollaston Station",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "220",
+    "name": "Hingham Depot - Quincy Center Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "222",
+    "name": "East Weymouth - Quincy Center Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "225",
+    "name": "Weymouth Landing - Quincy Center Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "226",
+    "name": "Columbian Square - Braintree Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "230",
+    "name": "Montello Station - Quincy Center Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "236",
+    "name": "South Shore Plaza - Quincy Center Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "238",
+    "name": "Holbrook/Randolph Station - Quincy Center Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "240",
+    "name": "Avon Square - Ashmont Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "245",
+    "name": "Quincy Center Station - Mattapan Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "350",
+    "name": "North Burlington - Alewife Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "351",
+    "name": "Bedford Woods Drive - Third Avenue",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "354",
+    "name": "North Burlington - State Street, Boston",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "411",
+    "name": "Kennedy Drive or Jack Satter House - Malden Center Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "424",
+    "name": "Eastern Avenue & Essex Street - Wonderland Station",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "426",
+    "name": "Central Square, Lynn - Haymarket or Wonderland Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "428",
+    "name": "Oaklandvale - Haymarket Station",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "429",
+    "name": "Northgate Shopping Center - Central Square, Lynn",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "430",
+    "name": "Saugus Center - Malden Center Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "435",
+    "name": "Liberty Tree Mall - Central Square, Lynn via Peabody Square",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "436",
+    "name": "Liberty Tree Mall - Central Square, Lynn via Goodwin Circle",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "439",
+    "name": "Nahant - Wonderland Station",
+    "type": "3",
+    "description": "Coverage Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "441",
+    "name": "Marblehead - Wonderland Station via Paradise Road",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "442",
+    "name": "Marblehead - Wonderland Station via Humphrey Street",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "450",
+    "name": "Salem Depot - Wonderland or Haymarket Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "451",
+    "name": "North Beverly Station - Salem Depot",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "455",
+    "name": "Salem Depot - Wonderland Station",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "456",
+    "name": "Salem Depot - Central Square, Lynn",
+    "type": "3",
+    "description": "Coverage Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "501",
+    "name": "Brighton Center - Federal Street & Franklin Street",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "504",
+    "name": "Watertown Yard - Federal Street & Franklin Street",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "505",
+    "name": "Waltham Center - Federal Street & Franklin Street",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "553",
+    "name": "Roberts - Newton Corner",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "554",
+    "name": "Waverley Square - Newton Corner",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "556",
+    "name": "Waltham Highlands - Newton Corner",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "558",
+    "name": "Riverside Station - Newton Corner",
+    "type": "3",
+    "description": "Commuter Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "712",
+    "name": "Point Shirley - Orient Heights Station via Revere Street",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "713",
+    "name": "Point Shirley - Orient Heights Station via Winthrop Center",
+    "type": "3",
+    "description": "Local Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "714",
+    "name": "Pemberton Point, Hull - Station Street, Hingham",
+    "type": "3",
+    "description": "Coverage Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  },
+  {
+    "id": "716",
+    "name": "Cobbs Corner - Mattapan Station",
+    "type": "3",
+    "description": "Coverage Bus",
+    "color": "FFC72C",
+    "text_color": "000000"
+  }
+]
