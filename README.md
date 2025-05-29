@@ -1,3 +1,10 @@
+![MBTA Dashboard Screenshot 1](mbta1.png)
+![MBTA Dashboard Screenshot 2](mbta2.png)
+
+# MBTA Transit Analytics Dashboard
+
+_Example screenshots of the MBTA Transit Analytics Dashboard interface._
+
 # MBTA Transit Data Integration Platform
 
 A Python-based platform for collecting, processing, and analyzing real-time MBTA transit data to generate route optimization insights.
