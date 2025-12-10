@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Area, AreaChart } from 'recharts';
-import { apiClient, APIError, Vehicle } from '../lib/api';
+import { apiClient, APIError } from '../lib/api';
 import { Download, AlertCircle } from 'lucide-react';
 import { exportTimeSeries } from '../utils/exportData';
 import { ChartSkeleton } from '../components/SkeletonLoader';
@@ -110,7 +110,7 @@ export default function TimeSeriesExplorer() {
           >
             <option value="all">All Routes</option>
             {uniqueRoutes.map(route => (
-              <option key={route} value={route}>{route}</option>
+              <option key={route || 'unknown'} value={route || ''}>{route || 'Unknown'}</option>
             ))}
           </select>
         </div>

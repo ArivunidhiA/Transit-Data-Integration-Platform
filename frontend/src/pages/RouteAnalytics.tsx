@@ -79,7 +79,7 @@ export default function RouteAnalytics() {
             className="bg-black border border-gray-700 rounded px-3 py-1 text-sm text-white focus:outline-none focus:border-green-500"
           >
             {uniqueRoutes.map(route => (
-              <option key={route} value={route}>{route}</option>
+              <option key={route || 'unknown'} value={route || ''}>{route || 'Unknown'}</option>
             ))}
           </select>
         </div>
