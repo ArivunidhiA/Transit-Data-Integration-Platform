@@ -217,13 +217,27 @@ VITE_API_URL=http://localhost:8000
 
 ## 🚢 Deployment
 
-### Render + Netlify (Recommended)
+### Option 1: Railway (Unified - Recommended)
+
+Deploy both frontend and backend together on Railway in one project.
+
+**Quick Steps:**
+1. Create Railway project from GitHub repo
+2. Add backend service: Root `backend`, Start `uvicorn main:app --host 0.0.0.0 --port $PORT`
+3. Add frontend service: Root `frontend`, Start `npx serve -s dist -l $PORT`
+4. Set environment variables (see [RAILWAY_DEPLOYMENT.md](RAILWAY_DEPLOYMENT.md))
+
+**Benefits:** Single platform, unified logs, easier CORS, cost-effective
+
+See [RAILWAY_DEPLOYMENT.md](RAILWAY_DEPLOYMENT.md) for detailed instructions.
+
+### Option 2: Render + Netlify (Separate)
 
 **Backend (Render):** Connect GitHub repo → Create Web Service → Root `backend` → Build `pip install -r requirements.txt` → Start `uvicorn main:app --host 0.0.0.0 --port $PORT` → Set env vars
 
 **Frontend (Netlify):** Connect GitHub repo → Base `frontend` → Build `npm run build` → Publish `dist` → Set `VITE_API_URL`
 
-**Docker Compose:**
+### Option 3: Docker Compose
 ```bash
 docker-compose up -d
 ```

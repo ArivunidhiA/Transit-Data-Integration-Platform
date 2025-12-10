@@ -2,11 +2,19 @@
 
 This guide will walk you through deploying the MBTA Transit Telemetry Platform to production.
 
+## Deployment Options
+
+### Option 1: Railway (Recommended - Unified Deployment)
+Deploy both frontend and backend together on Railway. See [RAILWAY_DEPLOYMENT.md](RAILWAY_DEPLOYMENT.md) for detailed instructions.
+
+### Option 2: Separate Platforms
+Deploy backend on Render and frontend on Netlify separately.
+
 ## Prerequisites
 
 1. GitHub account and repository
-2. Render account (free tier) for backend
-3. Netlify account (free tier) for frontend
+2. **Option 1**: Railway account (free tier) - for unified deployment
+3. **Option 2**: Render account (free tier) for backend + Netlify account (free tier) for frontend
 4. MBTA API key ([Get one here](https://api-v3.mbta.com/register))
 
 ## Step 1: Backend Deployment (Render)

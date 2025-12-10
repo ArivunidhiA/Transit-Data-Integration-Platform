@@ -1,0 +1,11 @@
+# Railway unified deployment configuration
+# This file helps Railway detect and deploy both services
+
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "echo 'Monorepo - services configured separately'"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
