@@ -180,12 +180,10 @@ VITE_API_URL=http://localhost:8000
 **5. Start Services**
 ```bash
 # Terminal 1: Backend
-cd backend
-uvicorn main:app --reload
+cd backend && uvicorn main:app --reload
 
 # Terminal 2: Frontend
-cd frontend
-npm run dev
+cd frontend && npm run dev
 ```
 
 **6. Access the Application**
@@ -206,7 +204,7 @@ npm run dev
 
 **Example `.env` file:**
 ```env
-MBTA_API_KEY=83d48f3163af4142a3bb1cf0e44174e4
+MBTA_API_KEY=your_api_key_here
 DATABASE_URL=sqlite:///./data/mbta_telemetry.db
 CORS_ORIGINS=http://localhost:3000,https://your-app.netlify.app
 LOG_LEVEL=INFO
@@ -218,39 +216,26 @@ LOG_LEVEL=INFO
 |----------|----------|---------|-------------|
 | `VITE_API_URL` | ✅ | `http://localhost:8000` | Backend API URL |
 
-**Example `.env` file:**
-```env
-VITE_API_URL=http://localhost:8000
-```
-
 ## 🚢 Deployment
 
-### Option 1: Render + Netlify (Recommended)
+### Render + Netlify (Recommended)
 
 **Backend (Render)**
 1. Connect GitHub repository to Render
-2. Create new Web Service
-3. Root directory: `backend`
-4. Build: `pip install -r requirements.txt`
-5. Start: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-6. Add environment variables (see Configuration section)
+2. Create Web Service: Root directory `backend`
+3. Build: `pip install -r requirements.txt`
+4. Start: `uvicorn main:app --host 0.0.0.0 --port $PORT`
+5. Set environment variables (see Configuration)
 
 **Frontend (Netlify)**
 1. Connect GitHub repository to Netlify
-2. Base directory: `frontend`
-3. Build: `npm run build`
-4. Publish: `dist`
-5. Set `VITE_API_URL` to your Render backend URL
+2. Base directory: `frontend`, Build: `npm run build`, Publish: `dist`
+3. Set `VITE_API_URL` to your Render backend URL
 
-### Option 2: Docker Compose
-
+### Docker Compose
 ```bash
 docker-compose up -d
 ```
-
-Access:
-- Frontend: http://localhost:3000
-- Backend: http://localhost:8000
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
 
@@ -265,9 +250,6 @@ Transit-Data-Integration-Platform/
 │   ├── collector.py         # Data collection service
 │   ├── database.py          # SQLAlchemy models
 │   ├── services/            # Business logic
-│   │   ├── mbta_client.py   # MBTA API client
-│   │   ├── delay_calculator.py
-│   │   └── alert_detector.py
 │   └── requirements.txt
 ├── frontend/
 │   ├── src/
@@ -282,28 +264,23 @@ Transit-Data-Integration-Platform/
 
 ### Local Development
 
-**Backend Development**
+**Backend**
 ```bash
-cd backend
-source venv/bin/activate
-uvicorn main:app --reload --port 8000
+cd backend && uvicorn main:app --reload --port 8000
 ```
 
-**Frontend Development**
+**Frontend**
 ```bash
-cd frontend
-npm run dev
+cd frontend && npm run dev
 ```
 
-**Run Tests**
+**Testing**
 ```bash
 # Backend
-cd backend
-pytest tests/
+cd backend && pytest tests/
 
 # Frontend
-cd frontend
-npm run lint
+cd frontend && npm run lint
 ```
 
 ### Key Endpoints
@@ -318,14 +295,14 @@ npm run lint
 
 ## 📄 License
 
-MIT License - see LICENSE file for details
+MIT License
 
 ## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ---
