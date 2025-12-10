@@ -11,8 +11,8 @@
 > Real-time telemetry collection and observability platform for MBTA transit vehicles. Collects, processes, and visualizes live transit data with 10-second update intervals.
 
 <p align="center">
-  <img src="Screenshot%202025-12-10%20at%204.09.46%20PM.png" alt="Dashboard Overview" width="800"/>
-  <img src="Screenshot%202025-12-10%20at%204.10.06%20PM.png" alt="Live Vehicle Map" width="800"/>
+  <img src="mbta-1.png" alt="Dashboard Overview" width="800"/>
+  <img src="mbta%20-%202.png" alt="Live Vehicle Map" width="800"/>
 </p>
 
 ## 📑 Table of Contents
