@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode (default) */
+:root.dark {
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0a0a0a;
+}
+
+/* Light mode */
+:root:not(.dark) {
+  color-scheme: light;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Leaflet map container */
+:root.dark .leaflet-container {
+  background: #1a1a1a;
+}
+
+:root:not(.dark) .leaflet-container {
+  background: #f3f4f6;
+}
+
+/* Responsive design improvements */
+@media (max-width: 640px) {
+  /* Larger touch targets on mobile */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Stack filters vertically on mobile */
+  .flex.flex-wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  /* Improve chart readability on mobile */
+  .recharts-wrapper {
+    font-size: 12px;
+  }
+}
+
+/* Scrollbar styling */
+:root.dark ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+:root:not(.dark) ::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+}
+
+:root.dark ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+:root.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+:root:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+}
+
+:root:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
