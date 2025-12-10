@@ -159,7 +159,7 @@ export default function LiveMap() {
           >
             <option value="all">All Routes</option>
             {uniqueRoutes.map(route => (
-              <option key={route} value={route}>{route}</option>
+              <option key={route || 'unknown'} value={route || ''}>{route || 'Unknown'}</option>
             ))}
           </select>
         </div>

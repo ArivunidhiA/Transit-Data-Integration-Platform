@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { apiClient, Vehicle, APIError } from '../lib/api';
-import { TrendingDown, TrendingUp, Clock, AlertCircle } from 'lucide-react';
-import { ChartSkeleton } from '../components/SkeletonLoader';
+import { apiClient } from '../lib/api';
+import { TrendingDown, TrendingUp } from 'lucide-react';
 
 export default function RouteAnalytics() {
   const [selectedRoute, setSelectedRoute] = useState<string>('Red');
   const [timeRange, setTimeRange] = useState<number>(24);
-  const [compareRoute, setCompareRoute] = useState<string>('none');
 
   const { data: vehicles } = useQuery({
     queryKey: ['vehicles'],
@@ -76,7 +74,7 @@ export default function RouteAnalytics() {
         <div className="flex items-center space-x-2">
           <label className="text-sm text-gray-400">Route:</label>
           <select
-            value={selectedRoute}
+            value={selectedRoute || ''}
             onChange={(e) => setSelectedRoute(e.target.value)}
             className="bg-black border border-gray-700 rounded px-3 py-1 text-sm text-white focus:outline-none focus:border-green-500"
           >

@@ -104,7 +104,7 @@ export default function TimeSeriesExplorer() {
         <div className="flex items-center space-x-2">
           <label className="text-sm text-gray-400">Route:</label>
           <select
-            value={selectedRoute}
+            value={selectedRoute || ''}
             onChange={(e) => setSelectedRoute(e.target.value)}
             className="bg-black border border-gray-700 rounded px-3 py-1 text-sm text-white focus:outline-none focus:border-green-500"
           >
