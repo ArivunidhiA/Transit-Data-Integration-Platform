@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: mbta-transit-dashboard
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn src.main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
-    envVars:
-      - key: MBTA_API_KEY
-        sync: false 

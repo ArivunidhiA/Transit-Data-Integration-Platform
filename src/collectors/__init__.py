@@ -1,3 +1,0 @@
-"""
-MBTA Data Collectors Package
-""" 
