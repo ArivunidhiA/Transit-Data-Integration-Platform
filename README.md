@@ -202,37 +202,26 @@ cd frontend && npm run dev
 | `CORS_ORIGINS` | ❌ | `*` | Allowed CORS origins (comma-separated) |
 | `LOG_LEVEL` | ❌ | `INFO` | Logging level |
 
-**Example `.env` file:**
+**Example `.env` files:**
 ```env
+# backend/.env
 MBTA_API_KEY=your_api_key_here
 DATABASE_URL=sqlite:///./data/mbta_telemetry.db
-CORS_ORIGINS=http://localhost:3000,https://your-app.netlify.app
-LOG_LEVEL=INFO
+CORS_ORIGINS=http://localhost:3000
+
+# frontend/.env
+VITE_API_URL=http://localhost:8000
 ```
-
-### Frontend Environment Variables
-
-| Variable | Required | Default | Description |
-|----------|----------|---------|-------------|
-| `VITE_API_URL` | ✅ | `http://localhost:8000` | Backend API URL |
 
 ## 🚢 Deployment
 
 ### Render + Netlify (Recommended)
 
-**Backend (Render)**
-1. Connect GitHub repository to Render
-2. Create Web Service: Root directory `backend`
-3. Build: `pip install -r requirements.txt`
-4. Start: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-5. Set environment variables (see Configuration)
+**Backend (Render):** Connect GitHub repo → Create Web Service → Root `backend` → Build `pip install -r requirements.txt` → Start `uvicorn main:app --host 0.0.0.0 --port $PORT` → Set env vars
 
-**Frontend (Netlify)**
-1. Connect GitHub repository to Netlify
-2. Base directory: `frontend`, Build: `npm run build`, Publish: `dist`
-3. Set `VITE_API_URL` to your Render backend URL
+**Frontend (Netlify):** Connect GitHub repo → Base `frontend` → Build `npm run build` → Publish `dist` → Set `VITE_API_URL`
 
-### Docker Compose
+**Docker Compose:**
 ```bash
 docker-compose up -d
 ```
@@ -274,23 +263,16 @@ cd backend && uvicorn main:app --reload --port 8000
 cd frontend && npm run dev
 ```
 
-**Testing**
-```bash
-# Backend
-cd backend && pytest tests/
+**Testing:** `cd backend && pytest tests/` | `cd frontend && npm run lint`
 
-# Frontend
-cd frontend && npm run lint
-```
-
-### Key Endpoints
+### Key API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
 | `/health` | GET | System health check |
-| `/vehicles` | GET | Get all active vehicles |
-| `/analytics/system` | GET | System-wide metrics |
-| `/routes/{id}/delays` | GET | Route delay analysis |
+| `/vehicles` | GET | Active vehicles |
+| `/analytics/system` | GET | System metrics |
+| `/routes/{id}/delays` | GET | Route delays |
 | `/alerts` | GET | System alerts |
 
 ## 📄 License
@@ -300,10 +282,10 @@ MIT License
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit changes (`git commit -m 'Add feature'`)
 4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+5. Open Pull Request
 
 ---
 
