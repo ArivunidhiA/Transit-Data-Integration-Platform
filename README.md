@@ -8,6 +8,8 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.124-blue)
 ![React](https://img.shields.io/badge/React-18-blue)
 
+🌐 **Live Demo**: [transit-data-platform.netlify.app](https://transit-data-platform.netlify.app)
+
 > Real-time telemetry collection and observability platform for MBTA transit vehicles. Collects, processes, and visualizes live transit data with 10-second update intervals.
 
 <p align="center">
